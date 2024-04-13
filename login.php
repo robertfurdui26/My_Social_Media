@@ -28,7 +28,7 @@ session_start();
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="code.php" method="POST" autocomplete="off">
+                    <form action="login_endpoint.php" method="POST" autocomplete="off">
                         </h1>
 
                         <div class="mb-3">
@@ -44,7 +44,7 @@ session_start();
                         <div class="mb-3 login_form">
                             <button type="submit" name="log" class="btn btn-success ">Log
                                 In</button>
-                            <a href="signUp.php" class="btn btn-dark float-end acasa_log">Sign Up</a>
+                            <a href="create_profile.php" class="btn btn-dark float-end acasa_log">Sign Up</a>
                         </div>
                     </form>
                 </div>

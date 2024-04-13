@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="create_profile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -19,32 +19,60 @@ session_start();
 
 <body>
     <?php include('message.php'); ?>
-    <?php
-                    if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
-                    ?>
+
+
+
     <div class="container ">
-        <div class="col-md-5 align-center">
+        <div class="col-md-5  align-center">
             <div class="card">
-                <div class="card-header bg-dark text-white log-header">
-                    <h4>Hello
-                        <?php echo $_SESSION['username']?> you need to complete your profile! </h4>
+                <div class="card-header bg-dark text-white l">
+                    <h4>Inregistrare</h4>
                 </div>
                 <div class="card-body">
-                    <form action="code.php" method="POST" autocomplete="off">
+                    <form action="profile_endpoint.php" method="POST" autocomplete="off" enctype="multipart/form-data">
                         </h1>
 
                         <div class="mb-3">
-                            <label class="mb-3">Profile Name</label>
-                            <input type="text" autocomplete="off" name="username" class="form-control" required>
+                            <label class="mb-3" for="username">User Name</label>
+                            <input type="text" name="username" class="form-control" required>
                         </div>
 
                         <div class="mb-3">
-                            <label class="mb-3">NickName</label>
-                            <input type="password" autocomplete="off" name="password" class="form-control" required>
+                            <label class="mb-3" for="password">Password</label>
+                            <input type="password" name="password" class="form-control" required>
                         </div>
 
+                        <div class="mb-3">
+                            <label class="mb-3" for="profile_name">Profile Name:</label>
+                            <input type="text" autocomplete="off" name="profile_name" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="mb-3" for="image">Profile Picture:</label>
+                            <input type="file" autocomplete="off" name="image" class="form-control" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label class="mb-3" for="Email">Email address:</label>
+                            <input type="text" autocomplete="off" name="Email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="mb-3" for="Address">Address:</label>
+                            <input type="text" autocomplete="off" name="Address" class="form-control" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label class="mb-3" for="Phone">Phone:</label>
+                            <input type="number" autocomplete="off" name="Phone" class="form-control" required>
+                        </div>
+
+
                         <div class="mb-3 login_form">
-                            <button type="submit" name="log" class="btn btn-success " name="page_home.php">Save
+                            <button type="submit" name="save_profile" class="btn btn-success align-center">Save
+                                Profile
                             </button>
                         </div>
                     </form>
@@ -53,9 +81,8 @@ session_start();
         </div>
     </div>
 </body>
-<?php
-                    }
-                    ?>
+
+
 
 
 

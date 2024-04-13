@@ -11,7 +11,7 @@ if (isset($_POST['log'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM credential WHERE username='$username'";
+    $sql = "SELECT * FROM user_profile WHERE username='$username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows == 1) {
@@ -22,7 +22,7 @@ if (isset($_POST['log'])) {
             $_SESSION['id'] = $row['id'];
             $_SESSION['name'] = $row['name'];
 
-            header("Location: create_profile.php");
+            header("Location: page_home.php");
             exit();
         } else {
             $_SESSION['message'] = "Parola Incorecta!";
