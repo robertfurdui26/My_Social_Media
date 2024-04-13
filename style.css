@@ -1,10 +1,20 @@
 
-  
+   body{
+    background-image:url(./image/backImg.jpg);
+       background-repeat: no-repeat;
+    background-size: 2000px 900px;
+
+}
+
+
+
  .container{
     display: flex;
     justify-content: center;
 
  }
+
+
 
  .boschImg{
     margin-top: 130px;

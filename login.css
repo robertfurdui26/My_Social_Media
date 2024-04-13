@@ -1,4 +1,10 @@
 
+/*body{
+    background-image:url(./image/backImg.jpg);
+       background-repeat: no-repeat;
+    background-size: 2000px 900px;
+
+}*/
 
 .container{
     display: flex;
@@ -6,3 +12,4 @@
     align-items: center;
     margin-top: 90px;
 }
+

@@ -1,0 +1,69 @@
+/* Stilizare bara de navigare */
+.navbar {
+    background-color: #c9c4c4;
+}
+
+/*body{
+    background-image:url(./image/backImg.jpg);
+       background-repeat: no-repeat;
+    background-size: 2000px 900px;
+
+}*/
+
+
+.container{
+    margin-top:-10px;
+    
+    background-color: #222831;
+   
+}
+
+
+
+.dropdown-menu-start{
+    margin-left: -20px;
+    width: 400px;
+    height: 764px;
+    background-color: #222831;
+
+}
+
+
+
+.addF{
+    margin-right: 10px;
+}
+
+.dropdown-menu{
+color: inherit;
+  text-decoration: none;
+}
+
+.card {
+    background-color: #222831;
+    color: #fff;
+}
+
+.card-header {
+    color: #fff;
+}
+
+.prieteni{
+    background-color: #222831;
+
+}
+
+.optiuni{
+        background-color: #222831;
+
+}
+
+
+/* Stilizare imagine utilizator */
+.userImg img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+

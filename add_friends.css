@@ -1,0 +1,20 @@
+
+.userImg img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #222831;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    color: #fff;
+}
+

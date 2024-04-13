@@ -1,0 +1,45 @@
+
+.userImg img {
+    border-radius: 70%;
+    width: 150px;
+    height: 120px;
+    object-fit:cover;
+    margin-top: 10px;
+    
+}
+
+.userImg{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-color: white;
+    color: #fff;
+    margin-bottom: 40px;
+    width: 699px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    color: black;
+}
+
+button{
+    width: 200px;
+    margin-left: auto;
+    
+}
+
+.message{
+    margin-right: 295.5px;
+}
+
